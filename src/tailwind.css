@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Çalibri';
+    src: url('../src/fonts/calibri/Calibri Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Çalibri';
+    src: url('../src/fonts/calibri/Calibri Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Çalibri';
+    src: url('../src/fonts/calibri/Calibri Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "Calibri", sans-serif;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #0F4D8B !important;
+}

@@ -1,0 +1,22 @@
+{
+  "homeHeader": [
+    {
+      "id": 1,
+      "title": "Lorem Ipsum Dolor Amet",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et. Id, soluta. Architecto nihil asperiores nisi amet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et.",
+      "image": "images/home/home-header-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Lorem Ipsum Dolor Amet",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et. Id, soluta. Architecto nihil asperiores nisi amet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et.",
+      "image": "images/home/home-header-1.png"
+    },
+    {
+      "id": 3,
+      "title": "Lorem Ipsum Dolor Amet",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et. Id, soluta. Architecto nihil asperiores nisi amet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et.",
+      "image": "images/home/home-header-1.png"
+    }
+  ]
+}
