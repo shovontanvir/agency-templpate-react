@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "../layouts/Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
@@ -42,19 +42,14 @@ const HomeHeader = () => {
 
   if (isLoading) {
     return (
-      <h1 className="text-6xl font-light mb-10">
-        Loading... PLease wait a moment.
-      </h1>
-    );
+        "Loading... PLease wait a moment."
+    )
   }
 
   if (isError) {
-    return <h1 className="text-6xl font-light mb-10">{error.message}</h1>;
+    return error.message
   }
 
-  if (!isLoading && !isError) {
-    // console.log(data);
-  }
   return (
     <Swiper
       autoplay={{
@@ -76,9 +71,9 @@ const HomeHeader = () => {
           >
             <Layout>
               <div className="h-screen flex justify-center items-center">
-                <div className="text-center md:mb-28 flex flex-col justify-center items-center md:w-2/3 lg:w-1/2">
+                <div className="text-center md:mb-28 flex flex-col justify-center items-center md:w-2/3">
                   {titleOrganizer(header.title.split(" "))}
-                  <p className="text-lg md:text-xl font-light px-4 sm:px-6 md:px-8 lg:px-10">
+                  <p className="text-lg md:text-xl font-light px-4 sm:px-6 md:px-8">
                     {header.description}
                   </p>
                   <hr className="w-1/6 mx-auto mt-5 border border-brand" />

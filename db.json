@@ -18,5 +18,26 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et. Id, soluta. Architecto nihil asperiores nisi amet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et.",
       "image": "images/home/home-header-1.png"
     }
+  ],
+
+  "homeServices" : [
+    {
+      "title": "Distribution",
+      "description": "We form the bridge that connects manufacturers and vendors based across the worlds to resellers and retailers based in Bangladesh.",
+      "image": "images/home/icon-distribution.png",
+      "alt": "distribution icon"
+    },
+    {
+      "title": "Professional Service",
+      "description": "We act as an IT advisor to businesses looking to transform the way they operate using the power of technology.",
+      "image": "images/home/icon-professional-services.png",
+      "alt": "professional service icon"
+    },
+    {
+      "title": "Managed Service",
+      "description": "We assist businesses in managing their IT systems at the highest level of efficiency using expert teams to ensure no hiccups arise in their operations.",
+      "image": "images/home/icon-managed-services.png",
+      "alt": "managed service icon"
+    }
   ]
 }

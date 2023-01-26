@@ -26,7 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"PORT=3001 react-scripts start\" \"npm run watch-twind\" \"npm run serve-json\" ",
+    "start": "concurrently \" react-scripts start\" \"npm run watch-twind\" \"npm run serve-json\" ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
