@@ -9,6 +9,9 @@ module.exports = {content: [
       colors: {
         'brand': '#0F4D8B',
       },
+      backgroundImage: {
+        'partner': "url('../public/images/home/bg-partner.png')",
+      }
     },
   },
   plugins: [],

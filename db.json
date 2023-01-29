@@ -2,42 +2,118 @@
   "homeHeader": [
     {
       "id": 1,
-      "title": "Lorem Ipsum Dolor Amet",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et. Id, soluta. Architecto nihil asperiores nisi amet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et.",
+      "title": "Bridging The Digital Divide",
+      "description": "We connects the world’s foremost technology vendors to a diverse set of channel partners to create innovative solutions and deliver services that help achieve specific business outcomes.",
       "image": "images/home/home-header-1.png"
     },
     {
       "id": 2,
-      "title": "Lorem Ipsum Dolor Amet",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et. Id, soluta. Architecto nihil asperiores nisi amet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et.",
+      "title": "Bridging The Digital Divide",
+      "description": "We connects the world’s foremost technology vendors to a diverse set of channel partners to create innovative solutions and deliver services that help achieve specific business outcomes.",
       "image": "images/home/home-header-1.png"
     },
     {
       "id": 3,
-      "title": "Lorem Ipsum Dolor Amet",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et. Id, soluta. Architecto nihil asperiores nisi amet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum cum et.",
+      "title": "Bridging The Digital Divide",
+      "description": "We connects the world’s foremost technology vendors to a diverse set of channel partners to create innovative solutions and deliver services that help achieve specific business outcomes.",
       "image": "images/home/home-header-1.png"
     }
   ],
 
   "homeServices" : [
     {
+      "id": 1,
       "title": "Distribution",
       "description": "We form the bridge that connects manufacturers and vendors based across the worlds to resellers and retailers based in Bangladesh.",
       "image": "images/home/icon-distribution.png",
       "alt": "distribution icon"
     },
     {
+      "id": 2,
       "title": "Professional Service",
       "description": "We act as an IT advisor to businesses looking to transform the way they operate using the power of technology.",
       "image": "images/home/icon-professional-services.png",
       "alt": "professional service icon"
     },
     {
+      "id": 3,
       "title": "Managed Service",
       "description": "We assist businesses in managing their IT systems at the highest level of efficiency using expert teams to ensure no hiccups arise in their operations.",
       "image": "images/home/icon-managed-services.png",
       "alt": "managed service icon"
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "image": "images/home/logo-dell.png",
+      "alt": "dell logo"
+    },
+    {
+      "id": 2,
+      "image": "images/home/logo-hp.png",
+      "alt": "hp logo"
+    },
+    {
+      "id": 3,
+      "image": "images/home/logo-avita.png",
+      "alt": "avita logo"
+    },
+    {
+      "id": 4,
+      "image": "images/home/logo-nexstgo.png",
+      "alt": "nexstgo logo"
+    },
+    {
+      "id": 5,
+      "image": "images/home/logo-vmware.png",
+      "alt": "vmware logo"
+    },
+    {
+      "id": 6,
+      "image": "images/home/logo-microsoft.png",
+      "alt": "microsoft logo"
+    },
+    {
+      "id": 7,
+      "image": "images/home/logo-fortinet.png",
+      "alt": "fortinet logo"
+    },
+    {
+      "id": 8,
+      "image": "images/home/logo-oracle.png",
+      "alt": "oracle logo"
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/company/b-trac-technologies-ltd-/",
+      "logo": "images/social-media/linkedin.png"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/btractech",
+      "logo": "images/social-media/facebook.png"
+    },
+    {
+      "name": "Youtube",
+      "url": "https://www.youtube.com/@b-tractechnologiesltd.1387",
+      "logo": "images/social-media/youtube.png"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/",
+      "logo": "images/social-media/instagram.png"
+    }
+  ],
+  "homePartners": [
+    {
+      "image": "images/home/partner-with-us.png",
+      "title": "Partner with us",
+      "description": "We just want our partners to focus on their products and leave it to us to help optimize your markets and profits. With a tried and tested logistics system and an extensive network of resellers across Bangladesh we ensure that your products are always available to your customers. Furthermore, our highly trained team is always available to support the technical needs of your customers so you can concentrate on growing your profitability. Want to make a splash in the Bangladesh market? Then become a partner today. ",
+      "registerLink": "#",
+      "buttonText": "Get Register"
     }
   ]
 }

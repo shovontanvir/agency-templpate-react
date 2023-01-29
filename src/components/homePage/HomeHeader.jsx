@@ -18,14 +18,14 @@ const HomeHeader = () => {
       if (index < 2) {
         firstHeading = firstHeading + item + " ";
       } else if (index === 2) {
-        highlightedHeading = item;
+        highlightedHeading = item + " ";
       } else {
         lastHeading = lastHeading + item + " ";
       }
     });
     finalTitle = (
       <h1 className="text-6xl font-light mb-10">
-        {firstHeading} <span className="text-brand">{highlightedHeading}</span>{" "}
+        {firstHeading} <span className="text-brand">{highlightedHeading}</span>
         {lastHeading}
       </h1>
     );
@@ -41,13 +41,11 @@ const HomeHeader = () => {
   );
 
   if (isLoading) {
-    return (
-        "Loading... PLease wait a moment."
-    )
+    return "Loading... PLease wait a moment.";
   }
 
   if (isError) {
-    return error.message
+    return error.message;
   }
 
   return (
@@ -73,7 +71,7 @@ const HomeHeader = () => {
               <div className="h-screen flex justify-center items-center">
                 <div className="text-center md:mb-28 flex flex-col justify-center items-center md:w-2/3">
                   {titleOrganizer(header.title.split(" "))}
-                  <p className="text-lg md:text-xl font-light px-4 sm:px-6 md:px-8">
+                  <p className="text-lg md:text-xl font-light px-4 sm:px-6 md:px-8 xl:px-16">
                     {header.description}
                   </p>
                   <hr className="w-1/6 mx-auto mt-5 border border-brand" />
