@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../layouts/Layout";
+import Layout from "../../../Components/Layouts/Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import { useQuery } from "react-query";
-import { getApiData } from "../../services/apiMethods";
+import { getApiData } from "../../../Services/apiMethods";
 
 const HomeHeader = () => {
   const titleOrganizer = (title) => {
@@ -24,7 +24,7 @@ const HomeHeader = () => {
       }
     });
     finalTitle = (
-      <h1 className="text-6xl font-light mb-10">
+      <h1 className="text-4xl md:text-5xl xl:text-6xl font-light mb-10">
         {firstHeading} <span className="text-brand">{highlightedHeading}</span>
         {lastHeading}
       </h1>
@@ -69,9 +69,9 @@ const HomeHeader = () => {
           >
             <Layout>
               <div className="h-screen flex justify-center items-center">
-                <div className="text-center md:mb-28 flex flex-col justify-center items-center md:w-2/3">
+                <div className="text-center mb-16 md:mb-28 flex flex-col justify-center items-center md:w-2/3">
                   {titleOrganizer(header.title.split(" "))}
-                  <p className="text-lg md:text-xl font-light px-4 sm:px-6 md:px-8 xl:px-16">
+                  <p className="md:text-xl font-light sm:px-6 md:px-8 xl:px-16">
                     {header.description}
                   </p>
                   <hr className="w-1/6 mx-auto mt-5 border border-brand" />

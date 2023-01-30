@@ -1,9 +1,6 @@
 import { QueryClientProvider, QueryClient } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import Brands from './components/homePage/Brands';
-import HomeHeader from './components/homePage/HomeHeader';
-import PartnerWithUs from './components/homePage/PartnerWithUs';
-import Services from './components/homePage/Services';
+import HomePage from './Pages/Home/HomePage';
 
 function App() {
   const queryClient = new QueryClient();
@@ -11,10 +8,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <>
-      <HomeHeader />
-      <Services />
-      <Brands />
-      <PartnerWithUs />
+        <HomePage />
       </>
       <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>

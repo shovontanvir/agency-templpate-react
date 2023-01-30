@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
-import { getApiData } from "../../services/apiMethods";
-import Layout from "../layouts/Layout";
+import { getApiData } from "../../../Services/apiMethods";
+import Layout from "../../../Components/Layouts/Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 
@@ -29,7 +29,7 @@ const Brands = () => {
 
   return (
     <section>
-      <Layout className="w-full justify-between items-center">
+      <Layout className="w-full justify-between items-center py-12 sm:py-16 lg:py-20">
         <Swiper
           slidesPerView={2}
           breakpoints={{
@@ -40,9 +40,11 @@ const Brands = () => {
               slidesPerView: 8,
             },
           }}
-          autoplay={{
-            delay: 1500,
-          }}
+          autoplay={
+            {
+              // delay: 1500,
+            }
+          }
           loop={true}
           pagination
           modules={[Autoplay]}
@@ -50,7 +52,7 @@ const Brands = () => {
         >
           {brands.map((brand) => (
             <SwiperSlide
-              className="px-6 py-20 flex justify-center items-center"
+              className="px-6 h-full flex justify-center items-center"
               key={brand.id}
             >
               <img src={brand.image} alt={brand.alt} />
