@@ -145,5 +145,32 @@
         }
       ]
     }
+  ],
+
+  "distribution": [
+    {
+      "id": 1,
+      "introDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "content": [
+        {
+          "id": 1,
+          "image": "images/distribution/icon-bttl-service.png",
+          "title": "BTTL Distribution Service",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          "id": 2,
+          "image": "images/distribution/icon-bttl-strategy.png",
+          "title": "BTTL Distribution Strategy",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          "id": 3,
+          "image": "images/distribution/icon-bttl-benefit.png",
+          "title": "BTTL Distribution Benefit",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        }
+      ]
+    }
   ]
 }

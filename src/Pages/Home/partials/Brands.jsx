@@ -40,11 +40,9 @@ const Brands = () => {
               slidesPerView: 8,
             },
           }}
-          autoplay={
-            {
-              // delay: 1500,
-            }
-          }
+          autoplay={{
+            delay: 1500,
+          }}
           loop={true}
           pagination
           modules={[Autoplay]}
