@@ -25,7 +25,7 @@ const AboutDetails = () => {
 
   return (
     <section>
-      <Layout className="py-10 md:py-20 justify-center items-center">
+      <Layout className="py-10 md:py-20 justify-start items-start">
         <div className="md:basis-1/3 text-center md:text-left border border-[D9D9D9] p-5 md:p-10">
           <img src={aboutUs.image} alt="about us" />
         </div>
@@ -34,7 +34,7 @@ const AboutDetails = () => {
           <div className="mt-3 md:mt-5">
             {content.map((item, index) => (
               <div
-                className={`flex flex-col md:flex-row justify-center items-center py-10 ${
+                className={`flex flex-col md:flex-row justify-center md:justify-start md:items-start items-center py-10 ${
                   index < content.length - 1 && "border-b"
                 }`}
                 key={item.id}

@@ -9,7 +9,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <>
-        {/* <HomePage /> */}
+        <HomePage />
         <About />
       </>
       <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
