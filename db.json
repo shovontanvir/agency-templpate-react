@@ -115,5 +115,35 @@
       "registerLink": "#",
       "buttonText": "Get Register"
     }
+  ],
+  "aboutUs": [
+    {
+      "id": 1,
+      "image": "images/aboutus/aboutus.png",
+      "introDescription": "B-Trac Technologies Ltd. connects the world’s foremost technology vendors to a diverse set of channel partners to create innovative solutions and deliver services that help achieve specific business outcomes. ",
+      "content": [
+        {
+          "id": 1,
+          "icon": "images/aboutus/icon-vision.png",
+          "title": "Vision",
+          "description": "A Dynamic Global Company Driving Stakeholders' Success Through Excellence, Integrity, Humility & People Leadership.",
+          "listItems": []
+        },
+        {
+          "id": 2,
+          "icon": "images/aboutus/icon-mission.png",
+          "title": "Mission",
+          "description": "We Are Committed to Enable Our Partners in Achieving Their Business & Digital Goals Through Innovative Solutions & Service Excellence While Ensuring Sustainable Growth & Stakeholders' Value.",
+          "listItems": []
+        },
+        {
+          "id": 3,
+          "icon": "images/aboutus/icon-values.png",
+          "title": "Values",
+          "description": "",
+          "listItems": ["People First", "Customer's Success", "Excellence Through Humility", "Integrity", "Innovation", "Environmentally Responsible"]
+        }
+      ]
+    }
   ]
 }

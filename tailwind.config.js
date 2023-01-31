@@ -11,6 +11,7 @@ module.exports = {content: [
       },
       backgroundImage: {
         'partner': "url('../public/images/home/bg-partner.png')",
+        'classic-1': "url('../public/images/global/classic1.png')",
       }
     },
   },

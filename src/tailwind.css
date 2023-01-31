@@ -25,6 +25,7 @@
 
 body {
     font-family: "Calibri", sans-serif;
+    font-weight: 100;
 }
 
 .swiper-button-prev, .swiper-button-next {

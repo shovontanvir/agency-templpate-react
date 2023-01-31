@@ -2,6 +2,7 @@ import React from "react";
 import { getApiData } from "../../../Services/apiMethods";
 import { useQuery } from "react-query";
 import Layout from "../../../Components/Layouts/Layout";
+import ServiceItem from "../../../Components/ServiceItem";
 
 const Services = () => {
   const getHomeServicesData = () => {
@@ -24,14 +25,13 @@ const Services = () => {
     <section className="py-16 md:py-20 lg:py-24 xl:py-28 px-0">
       <Layout className="justify-center">
         {data.map((item) => (
-          <div
-            className="sm:basis-1/2 lg:basis-1/3 text-center sm:p-3 my-8 sm:my-10 md:my-12 lg:my-0"
-            key={item.id}
-          >
-            <img src={item.image} alt={item.alt} className="mx-auto mb-4" />
-            <h1 className="text-2xl md:text-3xl">{item.title}</h1>
-            <p className="md:text-lg mt-3 text-[#505050]">{item.description}</p>
-          </div>
+          <ServiceItem
+            id={item.id}
+            image={item.image}
+            alt={item.alt}
+            title={item.title}
+            description={item.description}
+          />
         ))}
       </Layout>
     </section>
