@@ -7,10 +7,28 @@ const AboutDetails = () => {
   const getAboutDetails = () => {
     return getApiData("aboutUs");
   };
+  const {
+    isLoading: aboutIsLoading,
+    data: aboutData,
+    isError: isAboutError,
+    error: aboutError,
+  } = useQuery("about-us", getAboutDetails);
+
+  const getCompanyContent = () => {
+    return getApiData("companyMission");
+  };
   const { isLoading, data, isError, error } = useQuery(
-    "about-us",
-    getAboutDetails
+    "mission-vission-values",
+    getCompanyContent
   );
+
+  if (aboutIsLoading) {
+    return "Loading... PLease wait a moment.";
+  }
+
+  if (isAboutError) {
+    return aboutError.message;
+  }
 
   if (isLoading) {
     return "Loading... PLease wait a moment.";
@@ -20,8 +38,8 @@ const AboutDetails = () => {
     return error.message;
   }
 
-  const aboutUs = data[0];
-  const content = aboutUs.content;
+  const aboutUs = aboutData[0];
+  const content = data;
 
   return (
     <section>
