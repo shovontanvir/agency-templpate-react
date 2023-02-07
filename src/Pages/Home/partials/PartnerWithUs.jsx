@@ -23,8 +23,6 @@ const PartnerWithUs = () => {
     return error.message;
   }
 
-  console.log(data);
-
   return (
     <section className="py-10">
       <Layout>

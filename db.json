@@ -147,6 +147,30 @@
     }
   ],
 
+  "content": [
+    {
+      "id": 1,
+      "icon": "images/aboutus/icon-vision.png",
+      "title": "Vision",
+      "description": "A Dynamic Global Company Driving Stakeholders' Success Through Excellence, Integrity, Humility & People Leadership.",
+      "listItems": []
+    },
+    {
+      "id": 2,
+      "icon": "images/aboutus/icon-mission.png",
+      "title": "Mission",
+      "description": "We Are Committed to Enable Our Partners in Achieving Their Business & Digital Goals Through Innovative Solutions & Service Excellence While Ensuring Sustainable Growth & Stakeholders' Value.",
+      "listItems": []
+    },
+    {
+      "id": 3,
+      "icon": "images/aboutus/icon-values.png",
+      "title": "Values",
+      "description": "",
+      "listItems": ["People First", "Customer's Success", "Excellence Through Humility", "Integrity", "Innovation", "Environmentally Responsible"]
+    }
+  ],
+
   "distribution": [
     {
       "id": 1,
@@ -171,6 +195,14 @@
           "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         }
       ]
+    }
+  ],
+  "career": [
+    {
+      "tagLine": "Career Related Catchy Tagline",
+      "tagDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "image": "images/career/career.png",
+      "careerText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     }
   ]
 }

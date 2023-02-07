@@ -69,7 +69,7 @@ const HomeHeader = () => {
           >
             <Layout>
               <div className="h-screen flex justify-center items-center">
-                <div className="text-center mb-16 md:mb-28 flex flex-col justify-center items-center md:w-2/3">
+                <div className="text-center mb-16 lg:mb-52 flex flex-col justify-center items-center md:w-2/3">
                   {titleOrganizer(header.title.split(" "))}
                   <p className="md:text-xl font-light sm:px-6 md:px-8 xl:px-16">
                     {header.description}

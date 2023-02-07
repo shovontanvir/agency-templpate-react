@@ -28,7 +28,12 @@ const Socials = () => {
       <h1 className="text-2xl md:text-3xl mb-5">Follow us:</h1>
       <div className="flex mt-5">
         {socials.map((social) => (
-          <a href={social.url} target="blank" className="mr-3 md:mr-10">
+          <a
+            href={social.url}
+            target="blank"
+            className="mr-3 md:mr-10"
+            key={social.name}
+          >
             <img src={social.logo} alt={social.name} />
           </a>
         ))}

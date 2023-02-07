@@ -26,6 +26,7 @@ const Services = () => {
       <Layout className="justify-center">
         {data.map((item) => (
           <ServiceItem
+            key={item.id}
             id={item.id}
             image={item.image}
             alt={item.alt}
