@@ -119,6 +119,7 @@
   "aboutUs": [
     {
       "id": 1,
+      "bgImage": "images/aboutus/bg-about.png",
       "image": "images/aboutus/aboutus.png",
       "introDescription": "B-Trac Technologies Ltd. connects the world’s foremost technology vendors to a diverse set of channel partners to create innovative solutions and deliver services that help achieve specific business outcomes. "
     }
@@ -151,6 +152,7 @@
   "distribution": [
     {
       "id": 1,
+      "bgImage": "images/global/classic2.png",
       "introDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": [
         {
@@ -176,10 +178,101 @@
   ],
   "career": [
     {
+      "bgImage": "images/global/classic2.png",
       "tagLine": "Career Related Catchy Tagline",
       "tagDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       "image": "images/career/career.png",
       "careerText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    }
+  ],
+  "products": [
+    {
+      "id": "dell",
+      "blendColor": "#0F4D8B",
+      "productLogo": "../images/products/logo-dell.png",
+      "productTitle": "End-to-end technology. Unlimited possibilities.See how we stop at nothing to help drive your business forward.",
+      "productDescription": "Today, every organization needs to be a digital organization; powered by data, running in a multi-cloud world and ready to take on anything. We can help you prepare and create your digital future today.",
+      "productPoster": "../images/products/poster-dell.png",
+      "productPortfolio": [
+        {
+          "src": "../images/products/dell-laptop.png",
+          "title": "Thin out the competetion"
+        },
+        {
+          "src": "../images/products/dell-cpu.png",
+          "title": "Thin out the competetion"
+        }
+      ],
+      "videoUrl": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+      "facebook": "facebook_url",
+      "mobile": "01234567890",
+      "website": "website_url"
+    },
+    {
+      "id": "avita",
+      "blendColor": "#6A2D91",
+      "productLogo": "../images/products/logo-avita.png",
+      "productTitle": "End-to-end technology. Unlimited possibilities.See how we stop at nothing to help drive your business forward.",
+      "productDescription": "Today, every organization needs to be a digital organization; powered by data, running in a multi-cloud world and ready to take on anything. We can help you prepare and create your digital future today.",
+      "productPoster": "../images/products/poster-avita.png",
+      "productPortfolio": [
+        {
+          "src": "../images/products/avita-laptop.png",
+          "title": "Thin out the competetion"
+        },
+        {
+          "src": "../images/products/avita-laptop-2.png",
+          "title": "Thin out the competetion"
+        }
+      ],
+      "videoUrl": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+      "facebook": "facebook_url",
+      "mobile": "01234567890",
+      "website": "website_url"
+    },
+    {
+      "id": "hp",
+      "blendColor": "#0096D6",
+      "productLogo": "../images/products/logo-hp.png",
+      "productTitle": "End-to-end technology. Unlimited possibilities.See how we stop at nothing to help drive your business forward.",
+      "productDescription": "Today, every organization needs to be a digital organization; powered by data, running in a multi-cloud world and ready to take on anything. We can help you prepare and create your digital future today.",
+      "productPoster": "../images/products/poster-hp.png",
+      "productPortfolio": [
+        {
+          "src": "../images/products/hp-laptop.png",
+          "title": "Thin out the competetion"
+        },
+        {
+          "src": "../images/products/hp-cpu.png",
+          "title": "Thin out the competetion"
+        }
+      ],
+      "videoUrl": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+      "facebook": "facebook_url",
+      "mobile": "01234567890",
+      "website": "website_url"
+    },
+    {
+      "id": "oracle",
+      "blendColor": "#FE1808",
+      "productLogo": "../images/products/logo-oracle.png",
+      "productTitle": "End-to-end technology. Unlimited possibilities.See how we stop at nothing to help drive your business forward.",
+      "productDescription": "Today, every organization needs to be a digital organization; powered by data, running in a multi-cloud world and ready to take on anything. We can help you prepare and create your digital future today.",
+      "productPoster": "../images/products/poster-oracle.png",
+      "productPortfolio": [
+        {
+          "src": "../images/products/oracle-server.png",
+          "title": "Thin out the competetion"
+        },
+        {
+          "src": "../images/products/oracle-server-2.png",
+          "title": "Thin out the competetion"
+        }
+      ],
+      "videoUrl": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+      "facebook": "facebook_url",
+      "mobile": "01234567890",
+      "website": "website_url"
     }
   ]
 }

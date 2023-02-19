@@ -16,7 +16,6 @@ export const getApiData = (url) => {
 
 // function to post data to api using axios
 export const postApiData = async (data) => {
-  console.log(data);
   return new Promise((resolve, reject) => {
     axios
       .post(apiUrl + ".json", data)

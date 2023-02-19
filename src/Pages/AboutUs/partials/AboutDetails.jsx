@@ -1,59 +1,20 @@
 import React from "react";
-import { useQuery } from "react-query";
 import Layout from "../../../Components/Layouts/Layout";
-import { getApiData } from "../../../Services/apiMethods";
 
-const AboutDetails = () => {
-  const getAboutDetails = () => {
-    return getApiData("aboutUs");
-  };
-  const {
-    isLoading: aboutIsLoading,
-    data: aboutData,
-    isError: isAboutError,
-    error: aboutError,
-  } = useQuery("about-us", getAboutDetails);
-
-  const getCompanyContent = () => {
-    return getApiData("companyMission");
-  };
-  const { isLoading, data, isError, error } = useQuery(
-    "mission-vission-values",
-    getCompanyContent
-  );
-
-  if (aboutIsLoading) {
-    return "Loading... PLease wait a moment.";
-  }
-
-  if (isAboutError) {
-    return aboutError.message;
-  }
-
-  if (isLoading) {
-    return "Loading... PLease wait a moment.";
-  }
-
-  if (isError) {
-    return error.message;
-  }
-
-  const aboutUs = aboutData[0];
-  const content = data;
-
+const AboutDetails = (props) => {
   return (
     <section>
       <Layout className="py-10 md:py-20 justify-start items-start">
         <div className="md:basis-1/3 text-center md:text-left border border-[D9D9D9] p-5 md:p-10">
-          <img src={aboutUs.image} alt="about us" />
+          <img src={props.data.image} alt="about us" />
         </div>
         <div className="md:basis-2/3 text-center mt-16 md:mt-0 md:text-left md:pl-20">
-          <p className="text-lg">{aboutUs.introDescription}</p>
+          <p className="text-lg">{props.data.introDescription}</p>
           <div className="mt-3 md:mt-5">
-            {content.map((item, index) => (
+            {props.content.map((item, index) => (
               <div
                 className={`flex flex-col md:flex-row justify-center md:justify-start md:items-start items-center py-10 ${
-                  index < content.length - 1 && "border-b"
+                  index < props.content.length - 1 && "border-b"
                 }`}
                 key={item.id}
               >

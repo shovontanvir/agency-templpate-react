@@ -1,21 +1,38 @@
 import { QueryClientProvider, QueryClient } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import About from './Pages/AboutUs/About';
-import Contact from './Pages/Contact/Contact';
-import Distribution from './Pages/Distribution/Distribution';
-import HomePage from './Pages/Home/HomePage';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Navbar from './Components/Navbar';
+import { menuItems } from './Router/paths';
 
 function App() {
   const queryClient = new QueryClient();
 
   return (
     <QueryClientProvider client={queryClient}>
-      <>
-        <HomePage />
+      
+    <Router>
+        <Navbar />
+
+      <Routes>
+            {
+              menuItems.map((item, index) => (
+                (item.element && item.path && !item.childMenu) && <Route path={item.path} element={item.element} key={index.toString()} />
+              ))
+            }
+            {
+              menuItems.map((item) => (
+                item.childMenu ? item.childMenu.map((cItems, index) => (
+                  <Route path={cItems.path} element={cItems.element} key={index.toString()} />
+                )): null
+              ))
+            }
+      </Routes>
+        {/* <HomePage />
         <About />
         <Distribution />
-        <Contact />
-      </>
+        <Career />
+        <Products url="products" /> */}
+      </Router>
       <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>
   );

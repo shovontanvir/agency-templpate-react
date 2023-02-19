@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <section className="py-20">
       <Layout className="justify-center">
-        <div className="md:w-1/2 lg:w-1/3 aspect-square bg-[#fafafa] p-8 md:p-10 lg:p-16 border border-[#e5e5e5] rounded-lg">
+        <div className="md:w-1/2 bg-[#fafafa] p-8 md:p-10 lg:p-16 border border-[#e5e5e5] rounded-lg">
           <h1 className="text-2xl md:text-3xl lg:text-5xl mb-5">
             Join with Us
           </h1>

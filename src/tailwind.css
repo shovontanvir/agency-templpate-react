@@ -31,3 +31,37 @@ body {
 .swiper-button-prev, .swiper-button-next {
     color: #0F4D8B !important;
 }
+
+.video-react .video-react-poster {
+    background-size: cover !important;
+}
+
+.video-react .video-react-big-play-button {
+    translate: -50% -50% !important;
+    font-size: 2em !important;
+    line-height: 1.5em;
+    height: 3em !important;
+    width: 3em !important;
+    display: block;
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    padding: 0;
+    cursor: pointer;
+    opacity: 1;
+    border: 0.06666em solid #fff;
+    /* background-color: #2B333F; */
+    background-color: rgba(43, 51, 63, 0.7);
+    border-radius: 50% !important;
+    transition: all 0.4s;
+}
+
+.video-react .video-react-control:before,
+.video-react .video-react-big-play-button:before {
+    position: absolute;
+    top: 25% !important;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
