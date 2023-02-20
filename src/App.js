@@ -10,29 +10,24 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       
-    <Router>
-        <Navbar />
+      <Router>
+          <Navbar />
 
-      <Routes>
-            {
-              menuItems.map((item, index) => (
-                (item.element && item.path && !item.childMenu) && <Route path={item.path} element={item.element} key={index.toString()} />
-              ))
-            }
-            {
-              menuItems.map((item) => (
-                item.childMenu ? item.childMenu.map((cItems, index) => (
-                  <Route path={cItems.path} element={cItems.element} key={index.toString()} />
-                )): null
-              ))
-            }
-      </Routes>
-        {/* <HomePage />
-        <About />
-        <Distribution />
-        <Career />
-        <Products url="products" /> */}
-      </Router>
+          <Routes>
+                {
+                  menuItems.map((item, index) => (
+                    (item.element && item.path && !item.childMenu) && <Route path={item.path} element={item.element} key={index.toString()} />
+                  ))
+                }
+                {
+                  menuItems.map((item) => (
+                    item.childMenu ? item.childMenu.map((cItems, index) => (
+                      <Route path={cItems.path} element={cItems.element} key={index.toString()} />
+                    )): null
+                  ))
+                }
+          </Routes>
+        </Router>
       <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>
   );
