@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 
 const AboutDetails = (props) => {
   return (
     <section>
-      <Layout className="py-10 md:py-20 justify-start items-start">
+      <Skeleton className="py-10 md:py-20 justify-start items-start">
         <div className="md:basis-1/3 text-center md:text-left border border-[D9D9D9] p-5 md:p-10">
           <img src={props.data.image} alt="about us" />
         </div>
@@ -60,7 +60,7 @@ const AboutDetails = (props) => {
             ))}
           </div>
         </div>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

@@ -7,7 +7,7 @@ import { Autoplay, Pagination } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 
 const CareerContent = () => {
   const getCompanyContent = () => {
@@ -30,7 +30,7 @@ const CareerContent = () => {
 
   return (
     <section>
-      <Layout>
+      <Skeleton>
         <Swiper
           autoplay={{
             delay: 3500,
@@ -64,7 +64,7 @@ const CareerContent = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

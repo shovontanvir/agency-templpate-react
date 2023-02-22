@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 import Media from "../../../Components/Media";
 
 import "swiper/css";
@@ -7,7 +7,7 @@ import "swiper/css";
 const ContactDetails = (props) => {
   return (
     <section className="py-20">
-      <Layout className="flex-col items-center">
+      <Skeleton className="flex-col items-center">
         <div className="text-center md:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-5xl mb-5">
             {props.careerDetails.tagLine}
@@ -23,7 +23,7 @@ const ContactDetails = (props) => {
             </p>
           </div>
         </Media>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

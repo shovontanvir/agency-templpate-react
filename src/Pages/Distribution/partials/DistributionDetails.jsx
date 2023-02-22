@@ -1,11 +1,11 @@
 import React from "react";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 import ServiceItem from "../../../Components/ServiceItem";
 
 const DistributionDetails = (props) => {
   return (
     <section>
-      <Layout className="flex-col justify-center items-center py-20">
+      <Skeleton className="flex-col justify-center items-center py-20">
         <div className="text-center md:w-1/2 mb-20">
           <p className="text-lg">{props.data[0].introDescription}</p>
         </div>
@@ -20,7 +20,7 @@ const DistributionDetails = (props) => {
             />
           ))}
         </div>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

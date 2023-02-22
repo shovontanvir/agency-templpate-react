@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
 import { getApiData } from "../../../Services/apiMethods";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 
@@ -29,7 +29,7 @@ const Brands = () => {
 
   return (
     <section>
-      <Layout className="w-full justify-between items-center py-12 sm:py-16 lg:py-20">
+      <Skeleton className="w-full justify-between items-center py-12 sm:py-16 lg:py-20">
         <Swiper
           slidesPerView={2}
           breakpoints={{
@@ -57,7 +57,7 @@ const Brands = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

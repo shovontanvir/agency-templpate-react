@@ -1,7 +1,7 @@
 import React from "react";
 import { getApiData } from "../../../Services/apiMethods";
 import { useQuery } from "react-query";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 import ServiceItem from "../../../Components/ServiceItem";
 
 const Services = () => {
@@ -23,7 +23,7 @@ const Services = () => {
 
   return (
     <section className="py-16 md:py-20 lg:py-24 xl:py-28 px-0">
-      <Layout className="justify-center">
+      <Skeleton className="justify-center">
         {data.map((item) => (
           <ServiceItem
             key={item.id}
@@ -34,7 +34,7 @@ const Services = () => {
             description={item.description}
           />
         ))}
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

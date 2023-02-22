@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 import { Player } from "video-react";
 
 import "../../../../node_modules/video-react/dist/video-react.css";
@@ -7,7 +7,7 @@ import "../../../../node_modules/video-react/dist/video-react.css";
 const ProductDetails = (props) => {
   return (
     <section className="md:py-24">
-      <Layout className="flex-col md:flex-row">
+      <Skeleton className="flex-col md:flex-row">
         <div className="md:basis-1/2 py-10 md:pr-20">
           <h1 className="text-3xl">{props.productTitle}</h1>
           <hr className="my-10 border border-[#0F4D8B] w-1/3 opacity-30" />
@@ -20,7 +20,7 @@ const ProductDetails = (props) => {
             src={props.videoUrl}
           />
         </div>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

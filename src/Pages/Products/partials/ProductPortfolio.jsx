@@ -4,12 +4,12 @@ import { Autoplay, Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 
 const ProductPortfolio = (props) => {
   return (
     <section className="pt-10">
-      <Layout>
+      <Skeleton>
         <h1 className="text-lg md:text-3xl mb-6 md:px-16">Portfolio</h1>
         <Swiper
           autoplay={{
@@ -38,7 +38,7 @@ const ProductPortfolio = (props) => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

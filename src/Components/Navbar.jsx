@@ -3,7 +3,7 @@ import { useState } from "react";
 import logo from "../images/logo-btractech.png";
 import iconContact from "../images/icon-contact.png";
 import login from "../images/icon-login.png";
-import Layout from "./Layouts/Layout";
+import Skeleton from "./Skeleton/Skeleton";
 import Menu from "./Menu";
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="py-5 fixed z-50 w-screen">
-        <Layout className="justify-between items-center w-full">
+        <Skeleton className="justify-between items-center w-full">
           <div>
             <img src={logo} alt="btrac technologies" />
           </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
               <span className="h-[0.25rem] bg-black group-hover:animate-bounce"></span>
             </div>
           </div>
-        </Layout>
+        </Skeleton>
       </nav>
 
       {menuIsOn && <Menu onClick={() => closeMenu()} isOn={menuIsOn} />}

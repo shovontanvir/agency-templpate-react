@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 
@@ -67,7 +67,7 @@ const HomeHeader = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL}/${header.image}`,
             }}
           >
-            <Layout>
+            <Skeleton>
               <div className="h-screen flex justify-center items-center">
                 <div className="text-center mb-16 lg:mb-52 flex flex-col justify-center items-center md:w-2/3">
                   {titleOrganizer(header.title.split(" "))}
@@ -77,7 +77,7 @@ const HomeHeader = () => {
                   <hr className="w-1/6 mx-auto mt-5 border border-brand" />
                 </div>
               </div>
-            </Layout>
+            </Skeleton>
           </section>
         </SwiperSlide>
       ))}

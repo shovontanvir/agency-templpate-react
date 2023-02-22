@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../Layouts/Layout";
+import Skeleton from "../Skeleton/Skeleton";
 import MovingComponent from "react-moving-text";
 
 const ClassicHeader = (props) => {
@@ -13,7 +13,7 @@ const ClassicHeader = (props) => {
         alt={props.title}
         className="absolute inset-0 w-full h-full -z-50"
       />
-      <Layout className="h-full justify-center items-center flex-col">
+      <Skeleton className="h-full justify-center items-center flex-col">
         {!props.productLogo ? (
           <div className="z-50">
             <h1 className="text-3xl md:text-4xl xl:text-5xl flex">
@@ -38,7 +38,7 @@ const ClassicHeader = (props) => {
             <img src={props.productLogo} alt={props.title} />
           </div>
         )}
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

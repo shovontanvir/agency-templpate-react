@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 
 const ContactForm = () => {
   return (
     <section className="py-20">
-      <Layout className="justify-center">
+      <Skeleton className="justify-center">
         <div className="md:w-1/2 bg-[#fafafa] p-8 md:p-10 lg:p-16 border border-[#e5e5e5] rounded-lg">
           <h1 className="text-2xl md:text-3xl lg:text-5xl mb-5">
             Join with Us
@@ -67,7 +67,7 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };

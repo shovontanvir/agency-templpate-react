@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../../../Components/Layouts/Layout";
+import Skeleton from "../../../Components/Skeleton/Skeleton";
 
 const KnowMore = (props) => {
   return (
     <section className="pb-10">
-      <Layout>
+      <Skeleton>
         <div className="bg-[#f5f5f5] p-10 flex flex-col md:flex-row w-full justify-between items-center">
           <div>
             <h1 className="text-3xl">
@@ -53,7 +53,7 @@ const KnowMore = (props) => {
             </div>
           </div>
         </div>
-      </Layout>
+      </Skeleton>
     </section>
   );
 };
