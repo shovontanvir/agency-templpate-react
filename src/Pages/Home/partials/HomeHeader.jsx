@@ -14,7 +14,7 @@ const HomeHeader = () => {
     var finalTitle = "";
     var highlightedHeading = "";
     var lastHeading = "";
-    title.map((item, index) => {
+    title.forEach((item, index) => {
       if (index < 2) {
         firstHeading = firstHeading + item + " ";
       } else if (index === 2) {
