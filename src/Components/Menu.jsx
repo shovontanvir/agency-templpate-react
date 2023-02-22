@@ -41,14 +41,14 @@ const Menu = (props) => {
     <>
       <div className="h-screen w-screen fixed inset-0 bg-[#C4C4C4] opacity-70 z-[80]"></div>
       <div
-        className={`h-screen w-[25vw] bg-brand fixed top-0 bottom-0 right-0 z-[100] transition duration-1000 ease-in-out ${
+        className={`h-screen w-screen md:w-[50vw] lg:w-[25vw] bg-brand fixed top-0 bottom-0 right-0 z-[100] transition duration-1000 ease-in-out ${
           props.isOn ? "block" : "hidden"
         }`}
       >
         <div className="h-full relative">
           <FontAwesomeIcon
             icon={faTimes}
-            className="absolute top-[5%] -left-16 text-black text-3xl pl-3 hover:text-brand hover:scale-150 hover:rotate-[360deg] transition ease-in-out duration-1000 cursor-pointer"
+            className="absolute top-[5%] right-[5%] md:-left-16 text-black text-3xl pl-3 hover:text-brand hover:scale-150 hover:rotate-[360deg] transition ease-in-out duration-1000 cursor-pointer"
             onClick={props.onClick}
           />
           <div className="h-full flex flex-col justify-between py- px-8 sm:px-20 pt-8 sm:pt-16 md:pt-24 pb-8 md:pb-10">

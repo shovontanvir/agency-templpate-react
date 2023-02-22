@@ -1,6 +1,7 @@
 import { QueryClientProvider, QueryClient } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import { menuItems } from './Router/paths';
 
@@ -27,6 +28,7 @@ function App() {
                   ))
                 }
           </Routes>
+          <Footer />
         </Router>
       <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import logo from "../images/logo-btractech.png";
+import logoSmall from "../images/logo-btractech-small.png";
 import iconContact from "../images/icon-contact.png";
 import login from "../images/icon-login.png";
 import Skeleton from "./Skeleton/Skeleton";
@@ -37,14 +38,23 @@ const Navbar = () => {
       <nav className="py-5 fixed z-50 w-screen">
         <Skeleton className="justify-between items-center w-full">
           <div>
-            <img src={logo} alt="btrac technologies" />
+            <img
+              src={logo}
+              alt="btrac technologies"
+              className="hidden md:block"
+            />
+            <img
+              src={logoSmall}
+              alt="btrac technologies"
+              className="block md:hidden"
+            />
           </div>
           <div className="flex items-center">
-            <h1 className="flex mr-8">
+            <h1 className="hidden md:flex mr-8">
               <img src={iconContact} alt="contact us" />{" "}
               <span className="ml-3">Contact Us</span>
             </h1>
-            <h1 className="flex mr-8">
+            <h1 className="hidden md:flex mr-8">
               <img src={login} alt="partner login" />{" "}
               <span className="ml-3">Partner Login</span>
             </h1>

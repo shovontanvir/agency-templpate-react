@@ -497,6 +497,12 @@ video {
 .left-0 {
   left: 0px;
 }
+.left-5 {
+  left: 1.25rem;
+}
+.right-\[5\%\] {
+  right: 5%;
+}
 .z-\[80\] {
   z-index: 80;
 }
@@ -541,6 +547,10 @@ video {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .mb-5 {
   margin-bottom: 1.25rem;
@@ -590,8 +600,20 @@ video {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mt-4 {
+  margin-top: 1rem;
+}
+.ml-5 {
+  margin-left: 1.25rem;
+}
+.-mb-1 {
+  margin-bottom: -0.25rem;
+}
 .block {
   display: block;
+}
+.inline-block {
+  display: inline-block;
 }
 .flex {
   display: flex;
@@ -647,6 +669,9 @@ video {
 .basis-1\/3 {
   flex-basis: 33.333333%;
 }
+.basis-1\/4 {
+  flex-basis: 25%;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -685,6 +710,9 @@ video {
 }
 .border-b {
   border-bottom-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-\[D9D9D9\] {
   border-color: D9D9D9;
@@ -885,6 +913,9 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-\[13px\] {
+  font-size: 13px;
 }
 .font-light {
   font-weight: 300;
@@ -1091,6 +1122,10 @@ body {
 
 @media (min-width: 768px) {
 
+  .md\:-left-16 {
+    left: -4rem;
+  }
+
   .md\:m-16 {
     margin: 4rem;
   }
@@ -1108,6 +1143,11 @@ body {
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .md\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 
   .md\:mt-0 {
@@ -1134,6 +1174,18 @@ body {
     margin-right: 2.5rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:\!h-\[175px\] {
     height: 175px !important;
   }
@@ -1146,6 +1198,10 @@ body {
     width: 66.666667%;
   }
 
+  .md\:w-\[50vw\] {
+    width: 50vw;
+  }
+
   .md\:basis-1\/3 {
     flex-basis: 33.333333%;
   }
@@ -1156,6 +1212,10 @@ body {
 
   .md\:basis-1\/2 {
     flex-basis: 50%;
+  }
+
+  .md\:basis-1\/4 {
+    flex-basis: 25%;
   }
 
   .md\:flex-row {
@@ -1278,6 +1338,10 @@ body {
 
   .lg\:mb-52 {
     margin-bottom: 13rem;
+  }
+
+  .lg\:w-\[25vw\] {
+    width: 25vw;
   }
 
   .lg\:basis-1\/2 {
