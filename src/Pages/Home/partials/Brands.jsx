@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "react-query";
-import { getApiData } from "../../../Services/apiMethods";
+import { getApiData } from "../../../Services/apiFunctions";
 import Skeleton from "../../../Components/Skeleton/Skeleton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";

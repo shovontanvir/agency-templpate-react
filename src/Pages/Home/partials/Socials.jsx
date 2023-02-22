@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "react-query";
-import { getApiData } from "../../../Services/apiMethods";
+import { getApiData } from "../../../Services/apiFunctions";
 
 const Socials = () => {
   // function and query to query social media

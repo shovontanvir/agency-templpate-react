@@ -1,7 +1,7 @@
 import React from "react";
 import ClassicHeader from "../../Components/Header/ClassicHeader";
 import ProductDetails from "./partials/ProductDetails";
-import { getApiData } from "../../Services/apiMethods";
+import { getApiData } from "../../Services/apiFunctions";
 import { useQuery } from "react-query";
 import ProductPortfolio from "./partials/ProductPortfolio";
 import KnowMore from "./partials/KnowMore";

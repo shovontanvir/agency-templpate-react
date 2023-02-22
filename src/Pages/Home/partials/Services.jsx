@@ -1,5 +1,5 @@
 import React from "react";
-import { getApiData } from "../../../Services/apiMethods";
+import { getApiData } from "../../../Services/apiFunctions";
 import { useQuery } from "react-query";
 import Skeleton from "../../../Components/Skeleton/Skeleton";
 import ServiceItem from "../../../Components/ServiceItem";

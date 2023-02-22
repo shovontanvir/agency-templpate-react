@@ -6,7 +6,7 @@ import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useQuery } from "react-query";
-import { getApiData } from "../../../Services/apiMethods";
+import { getApiData } from "../../../Services/apiFunctions";
 
 const HomeHeader = () => {
   const titleOrganizer = (title) => {

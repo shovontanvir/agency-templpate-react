@@ -2,7 +2,7 @@ import React from "react";
 import ClassicHeader from "../../Components/Header/ClassicHeader";
 import DistributionDetails from "./partials/DistributionDetails";
 import { useQuery } from "react-query";
-import { getApiData } from "../../Services/apiMethods";
+import { getApiData } from "../../Services/apiFunctions";
 
 const Distribution = () => {
   const getDistributionData = () => {

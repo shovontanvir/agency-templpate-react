@@ -4,7 +4,7 @@ import ContactDetails from "./partials/ContactDetails";
 import CareerContent from "./partials/CareerContent";
 import ContactForm from "./partials/ContactForm";
 import { useQuery } from "react-query";
-import { getApiData } from "../../Services/apiMethods";
+import { getApiData } from "../../Services/apiFunctions";
 
 const Contact = () => {
   const getCareerData = () => {
