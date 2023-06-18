@@ -5,6 +5,8 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import { menuItems } from './Router/paths';
 
+
+
 function App() {
   const queryClient = new QueryClient();
 
@@ -28,8 +30,10 @@ function App() {
                   ))
                 }
           </Routes>
+
           <Footer />
         </Router>
+
       <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>
   );
